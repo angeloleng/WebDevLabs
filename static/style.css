@@ -11,12 +11,12 @@
 
 header
 {
-    color:aliceblue;
+    color:#f0f8ff;
 }
 
 #h1color
 {
-    background-color:darkolivegreen;
+    background-color:#556b2f;
 }
 
 a
@@ -29,12 +29,12 @@ a
 th
 {
     padding:12px;
-    background-color:darkolivegreen;
-    color:aliceblue;
+    background-color:#556b2f;
+    color:#f0f8ff;
 }
 
 tr:nth-child(even){
-    background-color:lightgrey;
+    background-color:#d3d3d3;
 }
 
 form *{
