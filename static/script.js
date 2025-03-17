@@ -41,8 +41,8 @@ if(C.length > z){
 var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-//function findTheBanana(x1){
 //step 7
+//function findTheBanana(x1){
 //    for (let i = 0; i<x1.length; i++){
 //        if (x1[i] == "Banana"){
 //            alert("found the Banana in " + i);
@@ -55,9 +55,9 @@ var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
 
 //step 8
-L1.forEach(bananaFinder);
+L1.forEach(findTheBanana);
 
-function bananaFinder(x){
+function findTheBanana(x){
     if (x == "Banana"){
         alert("We found a banana in the first array")
     }
