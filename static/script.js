@@ -41,22 +41,28 @@ if(C.length > z){
 var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-function findTheBanana(x1){
-    for (var i = 0; i<x1.length; i++){
-        if (x1[i] === "Banana"){
-            console.log("found the Banana in " + i);
-        }
+//function findTheBanana(x1){
+//step 7
+//    for (let i = 0; i<x1.length; i++){
+//        if (x1[i] == "Banana"){
+//            alert("found the Banana in " + i);
+//        }
+//    }
+//}
+
+//findTheBanana(L1);
+//findTheBanana(L2);
+
+
+//step 8
+L1.forEach(bananaFinder);
+
+function bananaFinder(x){
+    if (x == "Banana"){
+        alert("We found a banana in the first array")
     }
 }
 
-findTheBanana(L1);
-findTheBanana(L2);
-
-function findTheBanana2(x1){
-    if (x1 == "Banana"){
-        console.log("We found a banana in the array.")
-    }
-}
 
 //step 9
 function greetingFunc(){
@@ -64,15 +70,13 @@ function greetingFunc(){
     var h = d.getHours();
     var greeting;
 
-    if(0 <= h < 5){
+    if(0 <= h < 5 || 20 < h){
         greeting = "Good night";
     }else if (h < 12){
         greeting = "Good night";
     }else if (h < 18){
         greeting = "Good night";
     }else if (h < 20){
-        greeting = "Good night";
-    }else if (h < 24){
         greeting = "Good night";
     }
     dynamic.innerHTML = greeting + ", I am Angelo Leng";
