@@ -75,6 +75,6 @@ function greetingFunc(){
     }else if (h < 24){
         greeting = "Good night";
     }
-    dynamic.innerHTML = greeting;
+    dynamic.innerHTML = greeting + ", I am Angelo Leng";
 }
 greetingFunc()
