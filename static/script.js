@@ -55,9 +55,9 @@ var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
 
 //step 8
-L1.forEach(bananaFinder);
+L1.forEach(findTheBanana);
 
-function bananaFinder(x){
+function findTheBanana(x){
     if (x == "Banana"){
         alert("We found a banana in the first array")
     }
