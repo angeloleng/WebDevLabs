@@ -1,0 +1,45 @@
+*
+{
+    font-family:"Roboto", sans-serif;
+    padding:5px;
+    margin:5px;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header
+{
+    color:#f0f8ff;
+}
+
+#h1color
+{
+    background-color:#556b2f;
+}
+
+a
+{
+    text-decoration:none;
+    color: #696969;
+    margin-right:15px;
+}
+
+th
+{
+    padding:12px;
+    background-color:#556b2f;
+    color:#f0f8ff;
+}
+
+tr:nth-child(even){
+    background-color:#d3d3d3;
+}
+
+form *{
+    display:block;
+    margin:auto;
+    text-align:center;
+}
+
