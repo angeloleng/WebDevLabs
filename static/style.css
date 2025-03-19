@@ -43,3 +43,38 @@ form *{
     text-align:center;
 }
 
+#funButton{
+    display:block;
+}
+
+#funList{
+    display:none;
+}
+
+#defaultIntro{
+    display:block;
+}
+
+#fullIntro{
+    display:none;
+}
+
+#readMore{
+    background-color: #556b2f;
+}
+
+#readLess{
+    background-color: #556b2f;
+    display: none;
+}
+
+#submitButton {
+    border: black;
+}
+
+#errorMessage {
+    font-size:12px;
+    display:none;
+    color: crimson;
+    text-align: center;
+}

@@ -13,8 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src = "../static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload = "addYear()">
     <header>
         <h1 id="h1color">Angelo Leng</h1>
         <nav>
@@ -27,13 +28,20 @@
     <div class = "main">
         <h2>Contact Me</h2>
         <form action="/contact_form.php" method="get">
-            <label for="name">Name:</label>
-            <input type="text" id ="name" name="name"><br><br>
-            <label for="email">E-Mail:</label>
-            <input type="text" id ="email" name="email"><br><br>
-            <label for="comment">Comment:</label>
-            <input type="text" id ="comment" name="comment"><br><br>
+            <label for = "name">Name:</label>
+            <input id ="nameBox" type="text" required><br>
+
+            <label for = "email">E-Mail:</label>
+            <input id ="emailBox" type="email" required><br>
+
+            <label for = "comment">Comment:</label>
+            <textarea id ="commentBox" required></textarea><br><br>
+
+            <input type = "submit" id = "submitButton" value = "submit form" onclick = "validForm()">
         </form>
+
+        <p id = "error">Missing information in fields.</p>
+
         <table>
             <tr>
                 <th>CONTACT METHOD</th>
@@ -52,7 +60,7 @@
     </div>
     
     <footer>
-        ©2024 Angelo Leng. All rights reserved.
+        <p id = "copyYear">©2024 Angelo Leng. All rights reserved.</p>
     </footer>
 </body>
 </html>

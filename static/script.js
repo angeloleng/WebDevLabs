@@ -82,3 +82,37 @@ function greetingFunc(){
     dynamic.innerHTML = greeting + ", I am Angelo Leng";
 }
 greetingFunc()
+
+function addYear(){
+    var d = new Date();
+    var year = d.getFullYear();
+    copyYear.innerHTML = "©" + year + " Angelo Leng. All rights reserved.";
+}
+
+function showList(){
+    document.getElementById("funButton").style.display = "none";
+    document.getElementById("funList").style.display = "block";
+}
+
+
+function showFull() {
+    $("#readMore").hide();
+    $("#fullIntro").show();
+    $("#defaultIntro").hide();
+    $("#readLess").show();
+}
+function showDefault() {
+    $("#readLess").hide();
+    $("#defaultIntro").show();
+    $("#fullIntro").hide();
+    $("#readMore").show();
+}
+
+
+function validForm() {
+    if (document.getElementById("nameBox").checkValidity() == false || 
+    document.getElementById("emailBox").checkValidity() == false||document.getElementById("commentBox").checkValidity()== false){
+        $("#error").show();
+    }
+
+}
