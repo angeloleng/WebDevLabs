@@ -55,13 +55,13 @@ var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
 
 //step 8
-L1.forEach(findTheBanana);
+// L1.forEach(findTheBanana);
 
-function findTheBanana(x){
-    if (x == "Banana"){
-        alert("We found a banana in the first array")
-    }
-}
+// function findTheBanana(x){
+//     if (x == "Banana"){
+//         alert("We found a banana in the first array")
+//     }
+// }
 
 
 //step 9
@@ -81,7 +81,6 @@ function greetingFunc(){
     }
     dynamic.innerHTML = greeting + ", I am Angelo Leng";
 }
-greetingFunc()
 
 function addYear(){
     var d = new Date();
@@ -89,10 +88,10 @@ function addYear(){
     copyYear.innerHTML = "©" + year + " Angelo Leng. All rights reserved.";
 }
 
-function showList(){
+/*function showList(){
     document.getElementById("funButton").style.display = "none";
     document.getElementById("funList").style.display = "block";
-}
+}*/
 
 
 function showFull() {
@@ -114,5 +113,19 @@ function validForm() {
     document.getElementById("emailBox").checkValidity() == false||document.getElementById("commentBox").checkValidity()== false){
         $("#error").show();
     }
+}
 
+function getAdvice(){
+    fetch('https://api.adviceslip.com/advice')
+    .then(response => {
+        return response.json();
+    })
+    .then(fileInfo => {
+        var advice = fileInfo.slip.advice;
+        document.getElementById("adviceText").innerText = advice;
+    })
+    .catch(error =>{
+        document.getElementById("adviceText").innerText = "Something went wrong.";
+        console.error("Error:" + error)
+    })
 }
