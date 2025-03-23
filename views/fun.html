@@ -24,16 +24,33 @@
             <a href="fun.html">About Me</a>
         </nav>
     </header>
-    <div class = "main">
-        <h2>Things I love to do for fun</h2>
-        <button id = "funButton" onclick = "showList()">Click to See</button>
-        <ul id = "funList">
-            <li>Cooking</li>
-            <li>Language-Learning</li>
-            <li>Working Out</li>
-            <li>Eating</li>
-            <li>Chores</li>
-        </ul>
+    <div class = "mainLayout">
+<!--        <button id = "funButton" onclick = "showList()">Click to See</button>-->
+
+        <div id = "item1">
+            <h2>Things I love to do for fun</h2>
+            <ul id = "funList">
+                <li>Cooking</li>
+                <li>Language-Learning</li>
+                <li>Working Out</li>
+                <li>Eating</li>
+                <li>Chores</li>
+            </ul>
+        </div>
+        <div class = "funIMG" id = "item2">
+            <img src = "../static/uglydog.jpeg" alt = "This should be an image of an ugly dog">
+        </div>
+        <div id = "item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FfWrvrBY6Mo?si=BUGdBHShA8R15UnP" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id = "item4">
+            <div class = "container">
+                <h2>Need Some Advice?</h2>
+                <p id = "adviceText">For random advice, click the button</p>
+                <button id = "adviceButton" onclick = "getAdvice()">Get Advice!</button>
+            </div>
+        </div>
     </div>
     
     <footer>

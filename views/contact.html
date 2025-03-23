@@ -26,37 +26,48 @@
         </nav>
     </header>
     <div class = "main">
-        <h2>Contact Me</h2>
-        <form action="/contact_form.php" method="get">
-            <label for = "name">Name:</label>
-            <input id ="nameBox" type="text" required><br>
+        <div id = "item1">
+            <h2>Find Me</h2>
+            <div style="width: 100%">
+            <iframe width="80%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=3708%20Forbes%20Ave,%20Pittsburgh,%20PA%2015213+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                <a href="https://www.gps.ie/collections/drones/">drones ireland</a>
+            </iframe>
+            </div>
+        </div>
 
-            <label for = "email">E-Mail:</label>
-            <input id ="emailBox" type="email" required><br>
+        <div id = "item2"></div>
+            <h2>Contact Me</h2>
+            <form action="/contact_form.php" method="get">
+                <label for = "name">Name:</label>
+                <input id ="nameBox" type="text" required><br>
 
-            <label for = "comment">Comment:</label>
-            <textarea id ="commentBox" required></textarea><br><br>
+                <label for = "email">E-Mail:</label>
+                <input id ="emailBox" type="email" required><br>
 
-            <input type = "submit" id = "submitButton" value = "submit form" onclick = "validForm()">
-        </form>
+                <label for = "comment">Comment:</label>
+                <textarea id ="commentBox" required></textarea><br><br>
 
-        <p id = "errorMessage">Missing information in fields.</p>
+                <input type = "submit" id = "submitButton" value = "submit form" onclick = "validForm()">
+            </form>
 
-        <table>
-            <tr>
-                <th>CONTACT METHOD</th>
-                <th>description</th>
-            </tr>
-            <tr>
-                <td>phone number: </td>
-                <td>(626) 848-2184</td>
-            </tr>
-            <tr>
-                <td>e-mail address: </td>
-                <td>aleng@andrew.cmu.edu</td>
-            </tr>
+            <p id = "error">Missing information in fields.</p>
 
-        </table>
+            <table>
+                <tr>
+                    <th>CONTACT METHOD</th>
+                    <th>description</th>
+                </tr>
+                <tr>
+                    <td>phone number: </td>
+                    <td>(626) 848-2184</td>
+                </tr>
+                <tr>
+                    <td>e-mail address: </td>
+                    <td>aleng@andrew.cmu.edu</td>
+                </tr>
+
+            </table>
+        </div>
     </div>
     
     <footer>
