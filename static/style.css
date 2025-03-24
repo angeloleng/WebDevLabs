@@ -79,16 +79,20 @@ form *{
     text-align: center;
 }
 
-#funIMG{
-    border-radius: 100%;
+.funIMG{
+    border-radius: 80%;
+    border: black;
 }
 
 .container{
-    border-radius: 100%; display: inline-block; border-radius: 10%;
+    border-radius: 100%; 
+    border: black;
+    display: inline-block;
 }
 
 #adviceButton {
     border: black;
+    text-align:center;
 }
 
 .mainLayout{
